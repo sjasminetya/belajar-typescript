@@ -3,18 +3,18 @@ import './App.css';
 import ClassComp from './class-component';
 import FunctionComp from './function-component';
 import ArrComp from './function-component/arrowFunc';
+import FetchData from './function-component/FetchData';
 
 function App() {
   return (
     <div className="App">
-      <h2>Class Component</h2>
-      <ClassComp titleH1='Shaula Component' nama='shaula' />
+      <ClassComp titleH1='class Component' nama='shaula' />
 
-      <h2>Function Component</h2>
       <FunctionComp title='function component' />
 
-      <h2>Arrow Func</h2>
       <ArrComp title='arrow func' />
+
+      <FetchData title='fetch data from server' />
     </div>
   );
 }
